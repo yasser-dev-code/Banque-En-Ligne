@@ -17,7 +17,7 @@ public class AuthControleur {
     
     private void initialiserDonneesTest() {
         // Créer des clients de test
-        Client client1 = new Client("C001", "Wail", "Anai", "wail.anai@email.com", "password123");
+        Client client1 = new Client("C001", "Wail", "Anaia", "wail.anaia@email.com", "password123");
         Client client2 = new Client("C002", "Yasser", "Oussahel", "yasser.oussahel@email.com", "password456");
         
         // Ajouter des comptes aux clients
@@ -29,7 +29,7 @@ public class AuthControleur {
             }
         }
         
-        clients.put("wail.anai@email.com", client1);
+        clients.put("wail.anaia@email.com", client1);
         clients.put("yasser.oussahel@email.com", client2);
     }
     
@@ -70,4 +70,5 @@ public class AuthControleur {
     public boolean estConnecte() {
         return clientConnecte != null;
     }
+
 }
