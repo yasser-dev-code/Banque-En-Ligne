@@ -12,7 +12,8 @@ public class VirementControleur {
     }
     
     public void executerVirement(Virement virement) 
-            throws SoldeInsuffisantException, PlafondDepasseException {
+            throws SoldeInsuffisantException, PlafondDepasseException,
+            DecouvertDepasseException {
         virement.executer();
     }
     

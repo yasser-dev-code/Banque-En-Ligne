@@ -24,7 +24,8 @@ public class Virement {
         this.execute = false;
     }
     
-    public void executer() throws SoldeInsuffisantException, PlafondDepasseException {
+    public void executer() throws SoldeInsuffisantException, PlafondDepasseException,
+            DecouvertDepasseException {
         if (montant > CompteBancaire.PLAFOND_VIREMENT) {
             this.motifRejet = "Plafond de virement dépassé";
             throw new PlafondDepasseException(CompteBancaire.PLAFOND_VIREMENT, montant);

@@ -17,8 +17,8 @@ public class AuthControleur {
     
     private void initialiserDonneesTest() {
         // Créer des clients de test
-        Client client1 = new Client("C001", "Wail", "Anaia", "wail.anaia@email.com", "password123");
-        Client client2 = new Client("C002", "Yasser", "Oussahel", "yasser.oussahel@email.com", "password456");
+        Client client1 = new Client("C001", "Client", "Demo", "demo.client@example.test", "demo1234");
+        Client client2 = new Client("C002", "Epargne", "Demo", "demo.savings@example.test", "savings1234");
         
         // Ajouter des comptes aux clients
         for (banque.modele.abstractions.CompteBancaire compte : compteControleur.getTousLesComptes()) {
@@ -29,8 +29,8 @@ public class AuthControleur {
             }
         }
         
-        clients.put("wail.anaia@email.com", client1);
-        clients.put("yasser.oussahel@email.com", client2);
+        clients.put(client1.getEmail(), client1);
+        clients.put(client2.getEmail(), client2);
     }
     
     public boolean authentifier(String email, String motDePasse) {

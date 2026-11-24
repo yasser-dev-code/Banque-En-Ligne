@@ -1,0 +1,28 @@
+# Compiled output
+build/
+out/
+target/
+*.class
+*.jar
+
+# IDE and OS files
+.idea/
+.vscode/
+*.iml
+.project
+.classpath
+.settings/
+.DS_Store
+Thumbs.db
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+application-local.properties
+*.keystore
+*.jks
+
+# Generated statements and logs
+releve_*.txt
+*.log
